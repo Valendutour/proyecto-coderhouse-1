@@ -7,7 +7,6 @@
     <title>StaffDutour Peluqueria San telmo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="shortcut icon" href="./logos/logo staffdutour.png recortado.png" type="image/x-icon">
-    <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Noto+Serif+JP&display=swap" rel="stylesheet">
     <link
     rel="stylesheet"
@@ -15,81 +14,102 @@
     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="navbar2">
-            <nav class="navegacion">
-                <a href="index.html"><h2>STAFFDUTOUR</h2></a>
-            </nav>
-            <nav id="botonera">
-                 <ul id="boton">
-                    <li>
-                        <a href="pages/peluqueria.html">Peluqueria</a>
-                    </li>
-                    <li>
-                        <a href="pages/cosmiatria.html">Cosmiatria y Masajes</a>
-                    </li>
-                    <li>
-                        <a href="pages/manicuraypedicura.html">Manicura y Pedicura</a>
-                    </li>
-                    <li>
-                        <a href="pages/contacto.html">Contacto</a>
-                    </li>
+    <header>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-md "id="color">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">STAFFDUTOUR</a>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                </a>
+                <ul class="dropdown-menu bg-dark">
+                    <li><a class="dropdown-item" href="./pages/peluqueria.html">Peluqueria</a></li>
+                    <li><a class="dropdown-item" href="./pages/cosmiatria.html">Cosmiatria y Masajes</a></li>
+                    <li><a class="dropdown-item" href="./pages/manicuraypedicura.html">Manicura y Pedicura</a></li>
                 </ul>
-            </nav>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                  </li>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+      <!--end navbar-->
     </header>
-
 
     <main>
         <br>
         <div>
-            <h1>Temporada 2023</h1>
+            <h1 class="my-3">Temporada 2023</h1>
         </div>
-
-        <section class="modelos">
-            <div id="img1">
-                <img src="./temporada2023/africa.jpg" alt="">
-            </div>
-            <div id="img2">
-                <img src="./temporada2023/blanco.jpg" alt="">
-            </div> 
-            <div id="img3">
-                <img src="./temporada2023/blanca pelo corto.webp" alt="">
-            </div>
-            <div id="img4">
-                <img src="./temporada2023/pelirrojo.webp" alt="">
+        <!--start galeria-->
+        <section class="galeria">
+            <img src="./temporada2023/2023.0.jpg" alt="peinado de temporada">
+            <img src="./temporada2023/2023.1.jpg" alt="...">
+            <img src="./temporada2023/2023.2.jpg" alt="...">
+            <img src="./temporada2023/2023.3.jpg" alt="...">
+            <img src="./temporada2023/2023.5.jpg" alt="">
+        </section>
+        <!-- end galeria-->
+        <br><br><br><br>
+        <!-- inicio de productos-->
+        <section class="productos" class="container-fluid">
+            <h3 class="my-3">Productos Estrella</h3>
+            <div class="row m-0">
+                <article class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card bg-dark">
+                        <img src="./fotos/shampoo.jpg" class="card-img-top w-100 altura" alt="producto destacado">
+                        <div class="card-body">
+                            <h3 class="card-title text-center m-0 pb-2">Shampoo Azul</h3>
+                            <p class="card-text">descripcion del producto en cuestion</p>
+                            <a href="#" class="btn btn-secondary">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card bg-dark">
+                        <img src="./fotos/acondicionador.jpg" class="card-img-top w-100 altura" alt="producto destacado">
+                        <div class="card-body">
+                            <h3 class="card-title text-center m-0 pb-2">Acondicionador</h3>
+                            <p class="card-text">descripcion del producto en cuestion</p>
+                            <a href="#" class="btn btn-secondary">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card bg-dark">
+                        <img src="./fotos/cremas.jpg" class="card-img-top w-100 altura" alt="producto destacado">
+                        <div class="card-body">
+                            <h3 class="card-title text-center m-0 pb-2">Crema nutritiva</h3>
+                            <p class="card-text">descripcion del producto en cuestion</p>
+                            <a href="#" class="btn btn-secondary">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-sm-12 col-md-6 col-lg-3 my-3">
+                    <div class="card bg-dark">
+                        <img src="./fotos/shampoo.jpg" class="card-img-top w-100 altura" alt="producto destacado">
+                        <div class="card-body">
+                            <h3 class="card-title text-center m-0 pb-2">Shampoo Azul</h3>
+                            <p class="card-text">descripcion del producto en cuestion</p>
+                            <a href="#" class="btn btn-secondary">Comprar</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
-
-        <div>
-            <h3>Productos Estrella</h3>
-        </div>
-
-        <section class="productos">
-            <figure id="img1">
-                <img src="./fotos/shampoo.jpg" alt="producto1">
-                <figcaption>Shampoo Azul</figcaption>
-                <p>$1000</p>
-            </figure>
-            <figure id="img2">
-                <img src="./fotos/acondicionador.jpg" alt="producto2">
-                <figcaption>Acondicionador</figcaption>
-                <p>$2000</p>
-            </figure>
-            <figure id="img3">
-                <img src="./fotos/cremas.jpg" alt="producto3">
-                <figcaption>Crema Nutritiva<figcaption>
-                <p>$1000</p>
-            </figure>
-            <figure id="img4">
-                <img src="./fotos/shampoo.jpg" alt="producto1">
-                <figcaption>Shampoo Azul</figcaption>
-                <p>$1000</p>
-            </figure>
-        </section>
+        <!-- fin de productos-->
 <br><br>
         <section>
             <div>
@@ -102,7 +122,7 @@
     <footer id="final">
         <section>
             <nav id="iconos">
-                <a href="https://www.instagram.com/accounts/onetap/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.instagram.com/staffdutourok/?next=%2F" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
             </nav>
