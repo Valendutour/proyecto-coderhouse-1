@@ -211,12 +211,6 @@ form>div>label{
         font-size: large;
     }
     
-    .productos{
-        grid-template-columns: 2 auto;
-        grid-template-rows: 2;
-        grid-template-areas: "img1 img2" "img3 img4";
-    }
-
     .corte{
         grid-template-columns: 1;
         grid-template-rows: auto;
@@ -296,12 +290,6 @@ form>div>label{
         text-align: center;
     }
 
-    .productos{
-        grid-template-columns: 1;
-        grid-template-rows: auto;
-        grid-template-areas: "img1" "img2" "img3" "img4";
-    }
-
     .corte>div>h3{
         font-size: 20px;
     }
@@ -346,18 +334,6 @@ form>div>label{
     }
     h3{
         font-size: medium;
-    }
-    .navbar2{
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        margin-left: 5px;
-    }
-    #boton{
-        margin: 5px;
-    }
-    #boton li{
-        margin: 5px;
     }
 
     .galeria{
