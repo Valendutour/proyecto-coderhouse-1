@@ -1,0 +1,108 @@
+@import "_variables";
+@import "_comunes";
+@import "_navfooter";
+@import "_medias";
+
+/* hoja de inicio */
+.galeria{
+    display: flex;
+    height: 420px;
+}
+.galeria>img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .7;
+    transition: .5s ease;
+    align-self: $centro;
+}
+.galeria>img:hover{
+    cursor: crosshair;
+    width: 200px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.altura{
+    height: 250px;
+}
+
+
+/* hoja de peluqueria */
+.corte{
+    display: flex;
+    justify-content: $s-evenly;
+    display: grid;
+    grid-template-columns: 2 auto;
+    grid-template-rows: auto;
+    grid-template-areas: "gr1 gri2";
+}
+.corte>div>img{
+    margin-bottom: 80px;
+    width: $wh-300;
+    height: $wh-300;
+}
+.corte>div>p{
+    width: $w-650;
+}
+
+
+/* hoja de manicura y pedicura */
+.maniypedi{
+    display: flex;
+    justify-content: $s-evenly;
+    display: grid;
+    grid-template-columns: 2 auto;
+    grid-template-rows: auto;
+    grid-template-areas: "gr1 gri2";
+}
+.maniypedi>div>img{
+    margin-bottom: 80px;
+    width: $wh-300;
+    height: $wh-300;
+}
+.maniypedi>div>p{
+    width: $w-650;
+}
+
+
+/* hoja de cosmiatria y masajes */
+.cosymasajes{
+    display: flex;
+    justify-content: $s-evenly;
+    display: grid;
+    grid-template-columns: 2 auto;
+    grid-template-rows: auto;
+    grid-template-areas: "gr1 gri2";
+}
+.cosymasajes>div>img{
+    margin-bottom: 80px;
+    width: $wh-300;
+    height: $wh-300;
+}
+.cosymasajes>div>p{
+    width: $w-650;
+}
+
+
+/* hoja de contacto */
+.contacto{
+    display: flex;
+    justify-content: $s-evenly;
+    display: grid;
+    grid-template-columns: 2 auto;
+    grid-template-rows: auto;
+    grid-template-areas: "1 2";
+}
+.contacto_div>p{
+    width: $w-500;
+}
+
+.ubicacion{
+    justify-content: $s-evenly;
+}
+#h3formulario{
+    text-align: $centro;
+}
+form>div>label{
+    color: black;
+}

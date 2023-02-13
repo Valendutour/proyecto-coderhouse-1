@@ -1,0 +1,61 @@
+
+*{
+    font-family: $font1;
+    font-family: $font2;
+    color: $textcolor;
+}
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+main{
+    background-image: url(../fotos/fondonegro.jpg);
+    background-repeat: repeat;
+    background-attachment: fixed;
+} 
+h1{
+    font-weight: $textbold;
+    font-size: 40px;
+    text-align: $centro;
+}
+h2{
+    font-weight: $textregular;
+    font-size: 30px;
+    color: $textcolor;
+}
+h3{
+    font-weight: $textregular;
+    font-size: 25px;
+    margin-left: 35px;
+}
+h4{
+    font-size: $fonts;
+    text-align: $centro;
+}
+h5{
+    font-size: $fonts;
+    text-align: $centro;
+}
+p{
+    font-weight: $textligth;
+    font-size: 18px;
+    line-height: 19px;
+    text-align: $justificado;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    text-align: $centro;
+}
+
+a{
+    text-decoration: none;
+    text-align: $centro;
+    font-size: $fontm;
+    color: $textcolor;
+}
