@@ -1,4 +1,5 @@
 @import "_variables";
+@import "_mix";
 @import "_comunes";
 @import "_navfooter";
 @import "_medias";
@@ -7,20 +8,20 @@
 .galeria{
     display: flex;
     height: 420px;
-}
-.galeria>img{
+    img{
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .7;
     transition: .5s ease;
     align-self: $centro;
-}
-.galeria>img:hover{
-    cursor: crosshair;
-    width: 200px;
-    opacity: 1;
-    filter: contrast(120%);
+        &:hover{
+        cursor: crosshair;
+        width: 200px;
+        opacity: 1;
+        filter: contrast(120%);
+        }
+    }
 }
 .altura{
     height: 250px;
@@ -31,18 +32,17 @@
 .corte{
     display: flex;
     justify-content: $s-evenly;
-    display: grid;
-    grid-template-columns: 2 auto;
-    grid-template-rows: auto;
-    grid-template-areas: "gr1 gri2";
-}
-.corte>div>img{
-    margin-bottom: 80px;
-    width: $wh-300;
-    height: $wh-300;
-}
-.corte>div>p{
-    width: $w-650;
+    @extend .grid-2;
+    div{
+        img{
+        margin-bottom: 80px;
+        width: $wh-300;
+        height: $wh-300;
+        }
+        p{
+        width: $w-650;
+        }
+    }
 }
 
 
@@ -50,18 +50,17 @@
 .maniypedi{
     display: flex;
     justify-content: $s-evenly;
-    display: grid;
-    grid-template-columns: 2 auto;
-    grid-template-rows: auto;
-    grid-template-areas: "gr1 gri2";
-}
-.maniypedi>div>img{
-    margin-bottom: 80px;
-    width: $wh-300;
-    height: $wh-300;
-}
-.maniypedi>div>p{
-    width: $w-650;
+    @extend .grid-2;
+    div{
+        img{
+        margin-bottom: 80px;
+        width: $wh-300;
+        height: $wh-300;
+        }
+        p{
+        width: $w-650;
+        }
+    }
 }
 
 
@@ -69,18 +68,17 @@
 .cosymasajes{
     display: flex;
     justify-content: $s-evenly;
-    display: grid;
-    grid-template-columns: 2 auto;
-    grid-template-rows: auto;
-    grid-template-areas: "gr1 gri2";
-}
-.cosymasajes>div>img{
-    margin-bottom: 80px;
-    width: $wh-300;
-    height: $wh-300;
-}
-.cosymasajes>div>p{
-    width: $w-650;
+    @extend .grid-2;
+    div{
+        img{
+        margin-bottom: 80px;
+        width: $wh-300;
+        height: $wh-300;
+        }
+        p{
+        width: $w-650;
+        }
+    }
 }
 
 
@@ -88,13 +86,12 @@
 .contacto{
     display: flex;
     justify-content: $s-evenly;
-    display: grid;
-    grid-template-columns: 2 auto;
-    grid-template-rows: auto;
-    grid-template-areas: "1 2";
+    @extend .grid-3;
 }
-.contacto_div>p{
+.contacto_div{
+    p{
     width: $w-500;
+    }
 }
 
 .ubicacion{
@@ -103,6 +100,10 @@
 #h3formulario{
     text-align: $centro;
 }
-form>div>label{
-    color: black;
+form{
+    div{
+        label{
+        color: black;
+        }
+    }
 }

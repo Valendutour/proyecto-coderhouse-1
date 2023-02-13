@@ -1,0 +1,24 @@
+/*extendes*/
+.grid-gral{
+    display: grid;
+    grid-template-columns: 2 auto;
+    grid-template-rows: auto;
+}
+.grid-2{
+    @extend .grid-gral;
+    grid-template-areas: "gri1" "gri2";
+}
+.grid-3{
+    @extend .grid-gral;
+    grid-template-areas: "1" "2";
+}
+
+/*mixing*/
+@mixin cajas($mb, $w, $h){
+    margin-bottom: $mb;
+    width: $w;
+    height: $h;
+}
+img{
+    @include cajas(80px, $wh-300, $wh-300);
+}

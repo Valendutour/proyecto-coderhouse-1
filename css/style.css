@@ -5,6 +5,28 @@
 /*grosor de letras*/
 /*tamaño de letras*/
 /*width y height*/
+/*extendes*/
+.grid-gral, .grid-3, .contacto, .grid-2, .cosymasajes, .maniypedi, .corte {
+  display: grid;
+  grid-template-columns: 2 auto;
+  grid-template-rows: auto;
+}
+
+.grid-2, .cosymasajes, .maniypedi, .corte {
+  grid-template-areas: "gri1" "gri2";
+}
+
+.grid-3, .contacto {
+  grid-template-areas: "1" "2";
+}
+
+/*mixing*/
+img {
+  margin-bottom: 80px;
+  width: 300px;
+  height: 300px;
+}
+
 * {
   font-family: "Noto Serif JP", serif;
   font-family: "Merriweather", serif;
@@ -42,12 +64,7 @@ h3 {
   margin-left: 35px;
 }
 
-h4 {
-  font-size: small;
-  text-align: center;
-}
-
-h5 {
+h4, h5 {
   font-size: small;
   text-align: center;
 }
@@ -110,11 +127,6 @@ a {
   }
   h2 {
     font-size: large;
-  }
-  .corte {
-    grid-template-columns: 1;
-    grid-template-rows: auto;
-    grid-template-areas: "gri1" "gri2";
   }
   .corte div h3 {
     font-size: 30px;
@@ -272,8 +284,7 @@ a {
   display: flex;
   height: 420px;
 }
-
-.galeria > img {
+.galeria img {
   width: 0px;
   flex-grow: 1;
   -o-object-fit: cover;
@@ -282,8 +293,7 @@ a {
   transition: 0.5s ease;
   align-self: center;
 }
-
-.galeria > img:hover {
+.galeria img:hover {
   cursor: crosshair;
   width: 200px;
   opacity: 1;
@@ -298,19 +308,13 @@ a {
 .corte {
   display: flex;
   justify-content: space-evenly;
-  display: grid;
-  grid-template-columns: 2 auto;
-  grid-template-rows: auto;
-  grid-template-areas: "gr1 gri2";
 }
-
-.corte > div > img {
+.corte div img {
   margin-bottom: 80px;
   width: 300px;
   height: 300px;
 }
-
-.corte > div > p {
+.corte div p {
   width: 650px;
 }
 
@@ -318,19 +322,13 @@ a {
 .maniypedi {
   display: flex;
   justify-content: space-evenly;
-  display: grid;
-  grid-template-columns: 2 auto;
-  grid-template-rows: auto;
-  grid-template-areas: "gr1 gri2";
 }
-
-.maniypedi > div > img {
+.maniypedi div img {
   margin-bottom: 80px;
   width: 300px;
   height: 300px;
 }
-
-.maniypedi > div > p {
+.maniypedi div p {
   width: 650px;
 }
 
@@ -338,19 +336,13 @@ a {
 .cosymasajes {
   display: flex;
   justify-content: space-evenly;
-  display: grid;
-  grid-template-columns: 2 auto;
-  grid-template-rows: auto;
-  grid-template-areas: "gr1 gri2";
 }
-
-.cosymasajes > div > img {
+.cosymasajes div img {
   margin-bottom: 80px;
   width: 300px;
   height: 300px;
 }
-
-.cosymasajes > div > p {
+.cosymasajes div p {
   width: 650px;
 }
 
@@ -358,13 +350,9 @@ a {
 .contacto {
   display: flex;
   justify-content: space-evenly;
-  display: grid;
-  grid-template-columns: 2 auto;
-  grid-template-rows: auto;
-  grid-template-areas: "1 2";
 }
 
-.contacto_div > p {
+.contacto_div p {
   width: 500px;
 }
 
@@ -376,6 +364,6 @@ a {
   text-align: center;
 }
 
-form > div > label {
+form div label {
   color: black;
 }/*# sourceMappingURL=style.css.map */
