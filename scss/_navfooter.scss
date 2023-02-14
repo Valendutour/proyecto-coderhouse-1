@@ -4,18 +4,18 @@
     div{
         a{
             color: white;
-        }
-    }
-    ul{
-        li{
-            a{
-                color: $textcolor;
-                &:hoover{
-                    color: rgb(99, 93, 93);
+            }
+        ul{
+            li{
+                a{
+                    color: $textcolor;
+                    &:hover{
+                        color :  rgb( 99 ,  93 ,  93 );
+                    }
                 }
             }
         }
-    }
+    }   
 }
 
 

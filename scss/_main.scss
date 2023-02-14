@@ -1,0 +1,101 @@
+/* hoja de inicio */
+.galeria{
+    display: flex;
+    height: 420px;
+    img{
+        height: 420px;
+        width: 0px;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 0.7;
+        transition: .5s ease;
+        align-self: $centro;
+        &:hover{
+            cursor: crosshair;
+            height: 620px;
+            width: 200px;
+            opacity: 1;
+            filter: contrast(120%);
+        }
+    }
+}
+.altura{
+    height: 250px;
+}
+
+
+/* hoja de peluqueria */
+.corte{
+    justify-content: $s-evenly;
+    @extend .grid-2;
+    div{
+        img{
+        margin-bottom: 80px;
+        width: $wh-300;
+        height: $wh-300;
+        }
+        p{
+        width: $w-650;
+        }
+    }
+}
+
+
+/* hoja de manicura y pedicura */
+.maniypedi{
+    justify-content: $s-evenly;
+    @extend .grid-2;
+    div{
+        img{
+        margin-bottom: 80px;
+        width: $wh-300;
+        height: $wh-300;
+        }
+        p{
+        width: $w-650;
+        }
+    }
+}
+
+
+/* hoja de cosmiatria y masajes */
+.cosymasajes{
+    justify-content: $s-evenly;
+    @extend .grid-2;
+    div{
+        img{
+        margin-bottom: 80px;
+        width: $wh-300;
+        height: $wh-300;
+        }
+        p{
+        width: $w-650;
+        }
+    }
+}
+
+
+/* hoja de contacto */
+.contacto{
+    justify-content: $s-evenly;
+    @extend .grid-3;
+}
+.contacto_div{
+    p{
+    width: $w-500;
+    }
+}
+
+.ubicacion{
+    justify-content: $s-evenly;
+}
+#h3formulario{
+    text-align: $centro;
+}
+form{
+    div{
+        label{
+        color: black;
+        }
+    }
+}

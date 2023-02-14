@@ -145,25 +145,24 @@
 
 
 @media (max-width: 584px){
-
     h1{
         font-size: x-large;
     }
     h3{
         font-size: $fontm;
     }
-
     .galeria{
         height: 420px;
         img{
+            height: 420px;
             width: 0px;
+            margin: 0px;
             align-self: auto;
             &:hover{
                 width: 200px;
             }
         }
     }
-    
     .corte{
         div{
             p{
@@ -171,7 +170,6 @@
             }
         }
     }
-
     .cosymasajes{
         div{
             p{
@@ -179,7 +177,6 @@
             }
         }
     }
-
     .maniypedi{
         div{
             p{
@@ -203,7 +200,6 @@
 
 
 @media (max-width: 365px){
-    
     .corte{
         div{
             p{
@@ -211,7 +207,6 @@
             }
         }
     }
-
     .cosymasajes{
         div{
             p{
@@ -219,7 +214,6 @@
             }
         }   
     }
-
     .maniypedi{
         div{
             p{
@@ -227,7 +221,6 @@
             }
         }
     }
-
     .contacto{
         div{
             p{
