@@ -91,21 +91,31 @@
 
 
 /* hoja de peluqueria */
-.corte{
+.articulos{
     display: flex;
-    justify-content: $s-evenly;
+    justify-content: $centro;
     @extend .grid-2;
-    height: 320px;
     div{
+        margin-top: 50px;
         img{
         margin-bottom: 80px;
         width: $wh-280;
         height: $wh-280;
         }
+        h3{
+            font-size: 25px;
+            text-align: $centro;
+            margin: 0px 20px 0px 20px;
+        }
         p{
         width: $w-650;
+        margin: 20px;
         }
     }
+}
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 
@@ -121,7 +131,7 @@
         height: $wh-280;
         }
         p{
-        width: $w-650;
+        width:$w-650;
         }
     }
 }
@@ -164,7 +174,7 @@
     text-align: $centro;
 }
 .row{
-    justify-content: center;
+    justify-content: $centro;
     form{
         div{
             label{

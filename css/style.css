@@ -6,13 +6,13 @@
 /*tamaño de letras*/
 /*width y height*/
 /*extendes*/
-.grid-gral, .grid-3, .contacto, .grid-2, .cosymasajes, .maniypedi, .corte {
+.grid-gral, .grid-3, .contacto, .grid-2, .cosymasajes, .maniypedi, .articulos {
   display: grid;
   grid-template-columns: 2 auto;
   grid-template-rows: auto;
 }
 
-.grid-2, .cosymasajes, .maniypedi, .corte {
+.grid-2, .cosymasajes, .maniypedi, .articulos {
   grid-template-areas: "gri1" "gri2";
 }
 
@@ -249,18 +249,31 @@ a {
 }
 
 /* hoja de peluqueria */
-.corte {
+.articulos {
   display: flex;
-  justify-content: space-evenly;
-  height: 320px;
+  justify-content: center;
 }
-.corte div img {
+.articulos div {
+  margin-top: 50px;
+}
+.articulos div img {
   margin-bottom: 80px;
   width: 280px;
   height: 280px;
 }
-.corte div p {
-  width: 650px;
+.articulos div h3 {
+  font-size: 25px;
+  text-align: center;
+  margin: 0px 20px 0px 20px;
+}
+.articulos div p {
+  width: 600px;
+  margin: 20px;
+}
+
+.reverse {
+  display: flex;
+  flex-direction: row-reverse;
 }
 
 /* hoja de manicura y pedicura */
@@ -274,7 +287,7 @@ a {
   height: 280px;
 }
 .maniypedi div p {
-  width: 650px;
+  width: 600px;
 }
 
 /* hoja de cosmiatria y masajes */
@@ -288,7 +301,7 @@ a {
   height: 280px;
 }
 .cosymasajes div p {
-  width: 650px;
+  width: 600px;
 }
 
 /* hoja de contacto */
@@ -352,7 +365,7 @@ a {
     margin-top: 0px;
   }
   .corte div p {
-    width: 650px;
+    width: 600px;
     font-size: medium;
   }
   .cosymasajes {
@@ -366,7 +379,7 @@ a {
     margin-top: 0px;
   }
   .cosymasajes div p {
-    width: 650px;
+    width: 600px;
     font-size: medium;
   }
   .maniypedi {
@@ -380,7 +393,7 @@ a {
     margin-top: 0px;
   }
   .maniypedi div p {
-    width: 650px;
+    width: 600px;
     font-size: medium;
   }
   .contacto {
@@ -398,7 +411,7 @@ a {
     padding-top: 10px;
   }
   .contacto div p {
-    width: 650px;
+    width: 600px;
     font-size: medium;
   }
 }
@@ -454,6 +467,7 @@ a {
     width: 490px;
   }
 }
+/* poner en columna articulos peluqueria*/
 @media (max-width: 584px) {
   h1 {
     font-size: x-large;
