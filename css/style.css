@@ -1,0 +1,511 @@
+@charset "UTF-8";
+/*alineacion*/
+/*colors*/
+/*tipografia*/
+/*grosor de letras*/
+/*tamaño de letras*/
+/*width y height*/
+/*extendes*/
+.grid-gral, .grid-3, .contacto, .grid-2, .cosymasajes, .maniypedi, .corte {
+  display: grid;
+  grid-template-columns: 2 auto;
+  grid-template-rows: auto;
+}
+
+.grid-2, .cosymasajes, .maniypedi, .corte {
+  grid-template-areas: "gri1" "gri2";
+}
+
+.grid-3, .contacto {
+  grid-template-areas: "1" "2";
+}
+
+@keyframes button {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/*mixing*/
+img {
+  width: 280px;
+  height: 280px;
+}
+
+* {
+  font-family: "Merriweather", serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+main {
+  background-image: url(../fotos/fondonegro.jpg);
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  margin-left: 35px;
+}
+
+h4, h5 {
+  font-size: small;
+  text-align: center;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+  color: white;
+}
+
+/* navbar */
+#color .marca {
+  font-size: xx-large;
+}
+#color div a {
+  color: white;
+}
+#color div ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#color div ul li a {
+  color: white;
+  margin: 15px;
+}
+#color div ul li a:hover {
+  color: rgb(99, 93, 93);
+}
+
+/* footer */
+#final {
+  padding-top: 25px;
+  min-height: 50px;
+  display: flex;
+  width: 100%;
+  background: linear-gradient(to top, rgb(91, 91, 91), black);
+  justify-content: center;
+  text-align: center;
+}
+#final h2 {
+  margin-bottom: 20px;
+  font-size: x-large;
+}
+#final h4 {
+  margin-bottom: 14px;
+}
+#final #iconos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#final #iconos img {
+  width: 50px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+#final #iconos img:hover {
+  transform: rotatey(360deg);
+  cursor: pointer;
+  transition: all 2s;
+}
+
+/* hoja de inicio */
+.galeria {
+  display: flex;
+  height: 450px;
+}
+.galeria img {
+  height: 420px;
+  width: 0px;
+  flex-grow: 1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.7;
+  transition: 0.5s ease;
+  align-self: center;
+}
+.galeria img:hover {
+  cursor: crosshair;
+  height: 680px;
+  width: 180px;
+  opacity: 1;
+  filter: contrast(130%);
+}
+
+.altura {
+  margin-bottom: 0px;
+}
+
+.card {
+  background: black;
+}
+
+.cuerpo {
+  height: 260px;
+}
+.cuerpo button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  --primary-color: #111;
+  --hovered-color: #aeaeae;
+  position: relative;
+  display: flex;
+  font-weight: 600;
+  font-size: 20px;
+  gap: 0.5rem;
+  align-items: center;
+}
+.cuerpo button p {
+  margin: 0;
+  position: relative;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+.cuerpo button p::before {
+  position: absolute;
+  content: "Comprar";
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+.cuerpo button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: var(--hovered-color);
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+.cuerpo button:hover::after {
+  width: 100%;
+}
+.cuerpo button p::before {
+  width: 100%;
+}
+.cuerpo button p svg {
+  transform: translateX(4px);
+  color: var(--hovered-color);
+}
+.cuerpo button svg {
+  color: var(--primary-color);
+  transition: 0.2s;
+  position: relative;
+  width: 15px;
+  transition-delay: 0.2s;
+}
+
+/* hoja de peluqueria */
+.corte {
+  display: flex;
+  justify-content: space-evenly;
+  height: 320px;
+}
+.corte div img {
+  margin-bottom: 80px;
+  width: 280px;
+  height: 280px;
+}
+.corte div p {
+  width: 650px;
+}
+
+/* hoja de manicura y pedicura */
+.maniypedi {
+  display: flex;
+  justify-content: space-evenly;
+}
+.maniypedi div img {
+  margin-bottom: 80px;
+  width: 280px;
+  height: 280px;
+}
+.maniypedi div p {
+  width: 650px;
+}
+
+/* hoja de cosmiatria y masajes */
+.cosymasajes {
+  display: flex;
+  justify-content: space-evenly;
+}
+.cosymasajes div img {
+  margin-bottom: 80px;
+  width: 280px;
+  height: 280px;
+}
+.cosymasajes div p {
+  width: 650px;
+}
+
+/* hoja de contacto */
+.contacto {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contacto_div p {
+  width: 500px;
+}
+
+.ubicacion {
+  justify-content: space-evenly;
+}
+
+#h3formulario {
+  text-align: center;
+}
+
+.row {
+  justify-content: center;
+}
+.row form div label {
+  color: black;
+}
+
+@media (max-width: 1285px) {
+  .cuerpo {
+    height: 350px;
+  }
+}
+@media (max-width: 992px) {
+  a {
+    font-size: small;
+  }
+  h2 {
+    font-size: large;
+  }
+  #color div ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    margin-top: 10px;
+  }
+  #color div ul li a {
+    margin: 0px;
+  }
+  .cuerpo {
+    height: 260px;
+  }
+  .corte {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas: "gri1" "gri2";
+  }
+  .corte div h3 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .corte div p {
+    width: 650px;
+    font-size: medium;
+  }
+  .cosymasajes {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas: "gri1" "gri2";
+  }
+  .cosymasajes div h3 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .cosymasajes div p {
+    width: 650px;
+    font-size: medium;
+  }
+  .maniypedi {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas: "gri1" "gri2";
+  }
+  .maniypedi div h3 {
+    font-size: 30px;
+    margin-top: 0px;
+  }
+  .maniypedi div p {
+    width: 650px;
+    font-size: medium;
+  }
+  .contacto {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    grid-template-areas: "1" "2";
+    justify-items: center;
+  }
+  .contacto div h3 {
+    margin-left: 0px;
+    text-align: center;
+    font-size: 25px;
+    margin-top: 0px;
+    padding-top: 10px;
+  }
+  .contacto div p {
+    width: 650px;
+    font-size: medium;
+  }
+}
+@media (max-width: 768px) {
+  a {
+    font-size: x-small;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: medium;
+  }
+  h3 {
+    margin: 0%;
+    text-align: center;
+  }
+  #color .marca {
+    font-size: x-large;
+  }
+  .corte div h3 {
+    font-size: 20px;
+  }
+  .corte div p {
+    width: 500px;
+    font-size: small;
+  }
+  .cosymasajes div h3 {
+    font-size: 20px;
+  }
+  .cosymasajes div p {
+    width: 500px;
+    font-size: small;
+  }
+  .maniypedi div h3 {
+    font-size: 20px;
+  }
+  .maniypedi div p {
+    width: 500px;
+    font-size: small;
+  }
+  .contacto div h3 {
+    font-size: 20px;
+  }
+  .contacto div p {
+    width: 500px;
+    font-size: small;
+  }
+  .contacto .ubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 490px;
+  }
+}
+@media (max-width: 584px) {
+  h1 {
+    font-size: x-large;
+  }
+  h3 {
+    font-size: medium;
+  }
+  #color .marca {
+    font-size: large;
+  }
+  .galeria {
+    height: 420px;
+  }
+  .galeria img {
+    width: 0px;
+    margin: 0px;
+    align-self: auto;
+  }
+  .galeria img:hover {
+    height: 420px;
+    width: 190px;
+  }
+  .corte div p {
+    width: 340px;
+  }
+  .cosymasajes div p {
+    width: 340px;
+  }
+  .maniypedi div p {
+    width: 340px;
+  }
+  .contacto div p {
+    width: 340px;
+  }
+  .contacto .ubicacion {
+    width: 335px;
+  }
+}
+@media (max-width: 365px) {
+  .corte div p {
+    width: 295px;
+  }
+  .cosymasajes div p {
+    width: 295px;
+  }
+  .maniypedi div p {
+    width: 295px;
+  }
+  .contacto div p {
+    width: 295px;
+  }
+  .ubicacion {
+    width: 290px;
+  }
+}/*# sourceMappingURL=style.css.map */
