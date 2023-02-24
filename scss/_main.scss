@@ -19,7 +19,7 @@
         }
     }
 }
-.altura{
+.alturas{
     margin-bottom: 0px;
 }
 .card{
@@ -39,7 +39,7 @@
         font-weight: 600; 
         font-size: 20px;
         gap: 0.5rem;
-        align-items: center;
+        align-items: $centro;
         p{
             margin: 0; 
             position: relative; 
@@ -95,15 +95,15 @@
     display: flex;
     justify-content: $centro;
     @extend .grid-2;
-    div{
-        margin-top: 50px;
-        img{
+    img{
         margin-bottom: 80px;
         width: $wh-280;
         height: $wh-280;
         }
+    div{
+        margin-top: 50px;
         h3{
-            font-size: 25px;
+            font-size: 30px;
             text-align: $centro;
             margin: 0px 20px 0px 20px;
         }
@@ -166,6 +166,9 @@
     width: $w-500;
     }
 }
+.altura{
+  height: 100px;
+}
 
 .ubicacion{
     justify-content: $s-evenly;
@@ -179,6 +182,48 @@
         div{
             label{
             color: black;
+            }
+        }
+    }
+}
+
+/* hoja error 404 */
+.centrado{
+    display: flex;
+    flex-direction: column;
+    justify-content: $centro;
+    align-items: $centro;
+    margin-top: 130px;
+    .error{
+        justify-content: $centro;
+        align-items: $centro;
+        font-size: 200px;
+    }
+    div{
+        .size404{
+            font-size: $fontm;
+        }
+    }
+    .enlinea{
+        flex-direction: row;
+        .e404{
+            margin: 12px;
+            height: 50px;
+            width: 120px;
+            border-radius: 10px;
+            background: #333;
+            justify-content: $centro;
+            align-items: 4centro;
+            box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+            font-family: 'Damion', cursive;
+            border: none;
+            font-size: 16px;
+            color: rgb(161, 161, 161);
+            transition: 500ms;
+            &:hover{
+                box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+                color: #d6d6d6;
+                transition: 500ms;
             }
         }
     }

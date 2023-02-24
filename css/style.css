@@ -58,7 +58,7 @@ main {
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   margin-top: 20px;
 }
@@ -180,7 +180,7 @@ a {
   filter: contrast(130%);
 }
 
-.altura {
+.alturas {
   margin-bottom: 0px;
 }
 
@@ -253,16 +253,16 @@ a {
   display: flex;
   justify-content: center;
 }
-.articulos div {
-  margin-top: 50px;
-}
-.articulos div img {
+.articulos img {
   margin-bottom: 80px;
   width: 280px;
   height: 280px;
 }
+.articulos div {
+  margin-top: 50px;
+}
 .articulos div h3 {
-  font-size: 25px;
+  font-size: 30px;
   text-align: center;
   margin: 0px 20px 0px 20px;
 }
@@ -314,6 +314,10 @@ a {
   width: 500px;
 }
 
+.altura {
+  height: 100px;
+}
+
 .ubicacion {
   justify-content: space-evenly;
 }
@@ -327,6 +331,46 @@ a {
 }
 .row form div label {
   color: black;
+}
+
+/* hoja error 404 */
+.centrado {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+.centrado .error {
+  justify-content: center;
+  align-items: center;
+  font-size: 200px;
+}
+.centrado div .size404 {
+  font-size: medium;
+}
+.centrado .enlinea {
+  flex-direction: row;
+}
+.centrado .enlinea .e404 {
+  margin: 12px;
+  height: 50px;
+  width: 120px;
+  border-radius: 10px;
+  background: #333;
+  justify-content: center;
+  align-items: 4centro;
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222;
+  font-family: "Damion", cursive;
+  border: none;
+  font-size: 16px;
+  color: rgb(161, 161, 161);
+  transition: 500ms;
+}
+.centrado .enlinea .e404:hover {
+  box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+  color: #d6d6d6;
+  transition: 500ms;
 }
 
 @media (max-width: 1285px) {
@@ -354,19 +398,25 @@ a {
   .cuerpo {
     height: 260px;
   }
-  .corte {
+  .articulos {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: auto;
     grid-template-areas: "gri1" "gri2";
+    justify-items: center;
   }
-  .corte div h3 {
-    font-size: 30px;
-    margin-top: 0px;
+  .articulos div {
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
-  .corte div p {
-    width: 600px;
-    font-size: medium;
+  .articulos div img {
+    margin-bottom: 70px;
+  }
+  .articulos div h3 {
+    font-size: 33px;
+  }
+  .articulos div p {
+    font-size: large;
   }
   .cosymasajes {
     display: grid;
@@ -432,12 +482,19 @@ a {
   #color .marca {
     font-size: x-large;
   }
-  .corte div h3 {
-    font-size: 20px;
+  .articulos div {
+    margin-top: 10px;
+    margin-bottom: 50px;
   }
-  .corte div p {
+  .articulos div img {
+    margin-bottom: 70px;
+  }
+  .articulos div h3 {
+    font-size: 28px;
+  }
+  .articulos div p {
     width: 500px;
-    font-size: small;
+    font-size: large;
   }
   .cosymasajes div h3 {
     font-size: 20px;
@@ -467,10 +524,9 @@ a {
     width: 490px;
   }
 }
-/* poner en columna articulos peluqueria*/
 @media (max-width: 584px) {
   h1 {
-    font-size: x-large;
+    font-size: xx-large;
   }
   h3 {
     font-size: medium;
@@ -490,8 +546,20 @@ a {
     height: 420px;
     width: 190px;
   }
-  .corte div p {
-    width: 340px;
+  .articulos div {
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .articulos div img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 70px;
+  }
+  .articulos div h3 {
+    font-size: 25px;
+  }
+  .articulos div p {
+    width: 280px;
   }
   .cosymasajes div p {
     width: 340px;
@@ -507,8 +575,11 @@ a {
   }
 }
 @media (max-width: 365px) {
-  .corte div p {
-    width: 295px;
+  .articulos img {
+    margin-bottom: 0px;
+  }
+  .articulos div {
+    margin-bottom: 70px;
   }
   .cosymasajes div p {
     width: 295px;
@@ -521,5 +592,8 @@ a {
   }
   .ubicacion {
     width: 290px;
+  }
+  .centrado .error {
+    font-size: 160px;
   }
 }/*# sourceMappingURL=style.css.map */

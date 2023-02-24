@@ -33,19 +33,23 @@
         height: 260px;
     }
     
-    .corte{
+    .articulos{
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: auto;
         grid-template-areas: "gri1" "gri2";
+        justify-items: center;
         div{
+            margin-top: 10px;
+            margin-bottom: 50px;
+            img{
+            margin-bottom: 70px;
+            }
             h3{
-            font-size: 30px;
-            margin-top: 0px;
+            font-size: 33px;
             }
             p{
-            width: $w-650;
-            font-size: $fontm;
+            font-size: $fontl;
             }
         }
     }
@@ -127,18 +131,23 @@
             font-size: $fontxl;
         }
     }
-    .corte{
+
+    .articulos{
         div{
+            margin-top: 10px;
+            margin-bottom: 50px;
+            img{
+            margin-bottom: 70px;
+            }
             h3{
-            font-size: 20px;
+            font-size: 28px;
             }
             p{
             width: $w-500;
-            font-size: $fonts;
+            font-size: $fontl;
             }
         }
     }
-
     .cosymasajes{
         div{
             h3{
@@ -181,11 +190,11 @@
         }
     }
 }
-/* poner en columna articulos peluqueria*/
+
 
 @media (max-width: 584px){
     h1{
-        font-size: $fontxl;
+        font-size: $fontxxl;
     }
     h3{
         font-size: $fontm;
@@ -209,13 +218,25 @@
             }
         }
     }
-    .corte{
+    
+    .articulos{
         div{
+            margin-top: 10px;
+            margin-bottom: 50px;
+            img{
+            width: $wh-250;
+            height: $wh-250;
+            margin-bottom: 70px;
+            }
+            h3{
+            font-size: 25px;
+            }
             p{
-            width: 340px;
+            width: 280px;
             }
         }
     }
+
     .cosymasajes{
         div{
             p{
@@ -247,13 +268,15 @@
 
 @media (max-width: 365px){
 
-    .corte{
+    .articulos{
+        img{
+            margin-bottom: 0px;
+        }
         div{
-            p{
-            width: 295px;
-            }
+            margin-bottom: 70px;
         }
     }
+
     .cosymasajes{
         div{
             p{
@@ -277,5 +300,10 @@
     }
     .ubicacion{
         width: 290px;
+    }
+    .centrado{
+        .error{
+            font-size: 160px;
+        }
     }
 }
