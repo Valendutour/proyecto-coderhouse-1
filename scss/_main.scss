@@ -24,69 +24,75 @@
 }
 .card{
     background:$colorb;
-}
-.cuerpo{
-    height: 260px;
-    button{
-        padding: 0; 
-        margin: 0 ;
-        border: none; 
-        background: none; 
-        --primary-color: #111; 
-        --hovered-color: #aeaeae; 
-        position: relative; 
-        display: flex ;
-        font-weight: 600; 
-        font-size: 20px;
-        gap: 0.5rem;
-        align-items: $centro;
-        p{
-            margin: 0; 
+    img{
+        object-fit: contain;
+    }
+    .cuerpo{
+        height: 300px;
+        button{
+            padding: 0; 
+            margin: 0 ;
+            border: none; 
+            background: none; 
+            --primary-color: #111; 
+            --hovered-color: #aeaeae; 
             position: relative; 
+            display: flex ;
+            font-weight: 600; 
             font-size: 20px;
-            color: var(--primary-color); 
-            &::before{
-                position: absolute;
-                content: "Comprar";
-                width: 0%;
-                inset: 0 ;
-                color: var(--hovered-color); 
-                overflow: hidden; 
-                transition: 0.3s ease-out;
+            gap: 0.5rem;
+            align-items: $centro;
+            p{
+                margin: 0; 
+                position: relative; 
+                font-size: 20px;
+                color: var(--primary-color); 
+                &::before{
+                    position: absolute;
+                    content: "Comprar";
+                    width: 0%;
+                    inset: 0 ;
+                    color: var(--hovered-color); 
+                    overflow: hidden; 
+                    transition: 0.3s ease-out;
+                }
+            } 
+        &::after{ 
+            position: absolute;
+            content: "";
+            width: 0;
+            left: 0;
+            bottom: -7px; 
+            background: var(--hovered-color);
+            height: 2px;
+            transition: 0.3s ease-out
+        }
+        &:hover{ 
+            &::after{
+                width: 100%;
             }
-        } 
-	&::after{ 
-		position: absolute;
-		content: "";
-		width: 0;
-		left: 0;
-		bottom: -7px; 
-		background: var(--hovered-color);
-		height: 2px;
-		transition: 0.3s ease-out
-    }
-	&:hover{ 
-		&::after{
-			width: 100%;
         }
-    }
-	p{
-		&::before{ 
-			width: 100%;
-        }
-        svg {
-            transform: translateX(4px); 
-            color: var(--hovered-color);
+        p{
+            &::before{ 
+                width: 100%;
+            }
+            svg {
+                transform: translateX(4px); 
+                color: var(--hovered-color);
+            }
+            }
+        svg{
+            color: var(--primary-color);
+            transition: 0.2s;
+            position: relative; 
+            width: 15px;
+            transition-delay: 0.2s;
         }
         }
-	svg{
-		color: var(--primary-color);
-		transition: 0.2s;
-		position: relative; 
-		width: 15px;
-		transition-delay: 0.2s;
     }
-    }
+}
+.video{
+    margin-top: 200px;
 }
 
 

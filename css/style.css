@@ -187,11 +187,14 @@ a {
 .card {
   background: black;
 }
-
-.cuerpo {
-  height: 260px;
+.card img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-.cuerpo button {
+.card .cuerpo {
+  height: 300px;
+}
+.card .cuerpo button {
   padding: 0;
   margin: 0;
   border: none;
@@ -205,13 +208,13 @@ a {
   gap: 0.5rem;
   align-items: center;
 }
-.cuerpo button p {
+.card .cuerpo button p {
   margin: 0;
   position: relative;
   font-size: 20px;
   color: var(--primary-color);
 }
-.cuerpo button p::before {
+.card .cuerpo button p::before {
   position: absolute;
   content: "Comprar";
   width: 0%;
@@ -220,7 +223,7 @@ a {
   overflow: hidden;
   transition: 0.3s ease-out;
 }
-.cuerpo button::after {
+.card .cuerpo button::after {
   position: absolute;
   content: "";
   width: 0;
@@ -230,22 +233,26 @@ a {
   height: 2px;
   transition: 0.3s ease-out;
 }
-.cuerpo button:hover::after {
+.card .cuerpo button:hover::after {
   width: 100%;
 }
-.cuerpo button p::before {
+.card .cuerpo button p::before {
   width: 100%;
 }
-.cuerpo button p svg {
+.card .cuerpo button p svg {
   transform: translateX(4px);
   color: var(--hovered-color);
 }
-.cuerpo button svg {
+.card .cuerpo button svg {
   color: var(--primary-color);
   transition: 0.2s;
   position: relative;
   width: 15px;
   transition-delay: 0.2s;
+}
+
+.video {
+  margin-top: 200px;
 }
 
 /* hoja de peluqueria */
@@ -411,8 +418,11 @@ a {
   #color div ul li a {
     margin: 0px;
   }
-  .cuerpo {
-    height: 260px;
+  .card .cuerpo {
+    height: 400px;
+  }
+  .card .cuerpo h3 {
+    font-size: 25px;
   }
   .articulos {
     display: grid;
@@ -503,6 +513,12 @@ a {
   #color .marca {
     font-size: x-large;
   }
+  .card .cuerpo {
+    height: 380px;
+  }
+  .card .cuerpo h3 {
+    font-size: 25px;
+  }
   .articulos div {
     margin-bottom: 50px;
   }
@@ -565,6 +581,12 @@ a {
     height: 420px;
     width: 190px;
   }
+  .card .cuerpo {
+    height: 400px;
+  }
+  .card .cuerpo h3 {
+    font-size: 22px;
+  }
   .articulos img {
     width: 250px;
     height: 250px;
@@ -600,6 +622,12 @@ a {
   }
 }
 @media (max-width: 365px) {
+  .card .cuerpo {
+    height: 490px;
+  }
+  .card .cuerpo h3 {
+    font-size: 20px;
+  }
   .articulos img {
     margin-bottom: 0px;
   }

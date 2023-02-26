@@ -1,4 +1,4 @@
-# proyecto-coderhouse-1
+# Proyecto inicial de desarrollo web
 Pagina web de peluqueria.
 <br>
 Este es mi primer proyecto el cual presenta la tendencia 2023 en peinados, una seccion de productos, informacion de la marca y un apartado para el contacto.
