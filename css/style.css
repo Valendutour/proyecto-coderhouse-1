@@ -397,8 +397,14 @@ a {
 }
 
 @media (max-width: 1285px) {
-  .cuerpo {
-    height: 350px;
+  .card .cuerpo h3 {
+    font-size: 23px;
+  }
+  .card .cuerpo p {
+    font-size: medium;
+  }
+  .video {
+    margin-top: 275px;
   }
 }
 @media (max-width: 992px) {
@@ -421,8 +427,8 @@ a {
   .card .cuerpo {
     height: 400px;
   }
-  .card .cuerpo h3 {
-    font-size: 25px;
+  .video {
+    margin-top: 150px;
   }
   .articulos {
     display: grid;
@@ -514,10 +520,16 @@ a {
     font-size: x-large;
   }
   .card .cuerpo {
-    height: 380px;
+    height: 370px;
   }
   .card .cuerpo h3 {
     font-size: 25px;
+  }
+  .card .cuerpo p {
+    font-size: large;
+  }
+  .video {
+    margin-top: 30px;
   }
   .articulos div {
     margin-bottom: 50px;
@@ -582,10 +594,13 @@ a {
     width: 190px;
   }
   .card .cuerpo {
-    height: 400px;
+    height: 360px;
   }
   .card .cuerpo h3 {
     font-size: 22px;
+  }
+  .video {
+    margin-top: 10px;
   }
   .articulos img {
     width: 250px;
@@ -623,10 +638,16 @@ a {
 }
 @media (max-width: 365px) {
   .card .cuerpo {
-    height: 490px;
+    height: 350px;
   }
   .card .cuerpo h3 {
     font-size: 20px;
+  }
+  .card .cuerpo p {
+    font-size: small;
+  }
+  .video {
+    margin-top: 20px;
   }
   .articulos img {
     margin-bottom: 0px;
