@@ -97,9 +97,10 @@
     @extend .grid-2;
     img{
         margin-bottom: 80px;
-        width: $wh-280;
-        height: $wh-280;
-        }
+        width: $wh-300;
+        height: $wh-300;
+        object-fit: fill;
+    }
     div{
         margin-top: 50px;
         h3{
@@ -118,6 +119,33 @@
     flex-direction: row-reverse;
 }
 
+/* hoja de cosmiatria y masajes */
+.articulos2{
+    display: flex;
+    justify-content: $centro;
+    @extend .grid-2;
+    img{
+        margin-bottom: 80px;
+        width: $wh-300;
+        height: $wh-300;
+        }
+    div{
+        margin-top: 50px;
+        h3{
+            font-size: 30px;
+            text-align: $centro;
+            margin: 0px 20px 0px 20px;
+        }
+        p{
+        width: $w-650;
+        margin: 20px;
+        }
+    }
+}
+.reverse2{
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 /* hoja de manicura y pedicura */
 .maniypedi{
@@ -127,29 +155,11 @@
     div{
         img{
         margin-bottom: 80px;
-        width: $wh-280;
-        height: $wh-280;
+        width: $wh-300;
+        height: $wh-300;
         }
         p{
         width:$w-650;
-        }
-    }
-}
-
-
-/* hoja de cosmiatria y masajes */
-.cosymasajes{
-    display: flex;
-    justify-content: $s-evenly;
-    @extend .grid-2;
-    div{
-        img{
-        margin-bottom: 80px;
-        width: $wh-280;
-        height: $wh-280;
-        }
-        p{
-        width: $w-650;
         }
     }
 }

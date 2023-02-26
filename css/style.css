@@ -6,13 +6,13 @@
 /*tamaño de letras*/
 /*width y height*/
 /*extendes*/
-.grid-gral, .grid-3, .contacto, .grid-2, .cosymasajes, .maniypedi, .articulos {
+.grid-gral, .grid-3, .contacto, .grid-2, .maniypedi, .articulos2, .articulos {
   display: grid;
   grid-template-columns: 2 auto;
   grid-template-rows: auto;
 }
 
-.grid-2, .cosymasajes, .maniypedi, .articulos {
+.grid-2, .maniypedi, .articulos2, .articulos {
   grid-template-areas: "gri1" "gri2";
 }
 
@@ -33,8 +33,8 @@
 }
 /*mixing*/
 img {
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
 }
 
 * {
@@ -255,8 +255,10 @@ a {
 }
 .articulos img {
   margin-bottom: 80px;
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 .articulos div {
   margin-top: 50px;
@@ -276,6 +278,34 @@ a {
   flex-direction: row-reverse;
 }
 
+/* hoja de cosmiatria y masajes */
+.articulos2 {
+  display: flex;
+  justify-content: center;
+}
+.articulos2 img {
+  margin-bottom: 80px;
+  width: 300px;
+  height: 300px;
+}
+.articulos2 div {
+  margin-top: 50px;
+}
+.articulos2 div h3 {
+  font-size: 30px;
+  text-align: center;
+  margin: 0px 20px 0px 20px;
+}
+.articulos2 div p {
+  width: 600px;
+  margin: 20px;
+}
+
+.reverse2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 /* hoja de manicura y pedicura */
 .maniypedi {
   display: flex;
@@ -283,24 +313,10 @@ a {
 }
 .maniypedi div img {
   margin-bottom: 80px;
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
 }
 .maniypedi div p {
-  width: 600px;
-}
-
-/* hoja de cosmiatria y masajes */
-.cosymasajes {
-  display: flex;
-  justify-content: space-evenly;
-}
-.cosymasajes div img {
-  margin-bottom: 80px;
-  width: 280px;
-  height: 280px;
-}
-.cosymasajes div p {
   width: 600px;
 }
 
@@ -405,11 +421,11 @@ a {
     grid-template-areas: "gri1" "gri2";
     justify-items: center;
   }
+  .articulos img {
+    margin-bottom: 10px;
+  }
   .articulos div {
     margin-top: 10px;
-    margin-bottom: 50px;
-  }
-  .articulos div img {
     margin-bottom: 70px;
   }
   .articulos div h3 {
@@ -418,19 +434,25 @@ a {
   .articulos div p {
     font-size: large;
   }
-  .cosymasajes {
+  .articulos2 {
     display: grid;
     grid-template-columns: 1;
     grid-template-rows: auto;
     grid-template-areas: "gri1" "gri2";
+    justify-items: center;
   }
-  .cosymasajes div h3 {
-    font-size: 30px;
-    margin-top: 0px;
+  .articulos2 img {
+    margin-bottom: 10px;
   }
-  .cosymasajes div p {
-    width: 600px;
-    font-size: medium;
+  .articulos2 div {
+    margin-top: 10px;
+    margin-bottom: 70px;
+  }
+  .articulos2 div h3 {
+    font-size: 33px;
+  }
+  .articulos2 div p {
+    font-size: large;
   }
   .maniypedi {
     display: grid;
@@ -439,12 +461,12 @@ a {
     grid-template-areas: "gri1" "gri2";
   }
   .maniypedi div h3 {
-    font-size: 30px;
+    font-size: 33px;
     margin-top: 0px;
   }
   .maniypedi div p {
     width: 600px;
-    font-size: medium;
+    font-size: large;
   }
   .contacto {
     display: grid;
@@ -456,13 +478,12 @@ a {
   .contacto div h3 {
     margin-left: 0px;
     text-align: center;
-    font-size: 25px;
+    font-size: 33px;
     margin-top: 0px;
     padding-top: 10px;
   }
   .contacto div p {
     width: 600px;
-    font-size: medium;
   }
 }
 @media (max-width: 768px) {
@@ -483,11 +504,7 @@ a {
     font-size: x-large;
   }
   .articulos div {
-    margin-top: 10px;
     margin-bottom: 50px;
-  }
-  .articulos div img {
-    margin-bottom: 70px;
   }
   .articulos div h3 {
     font-size: 28px;
@@ -496,26 +513,28 @@ a {
     width: 500px;
     font-size: large;
   }
-  .cosymasajes div h3 {
-    font-size: 20px;
+  .articulos2 div {
+    margin-bottom: 50px;
   }
-  .cosymasajes div p {
+  .articulos2 div h3 {
+    font-size: 28px;
+  }
+  .articulos2 div p {
     width: 500px;
-    font-size: small;
+    font-size: large;
   }
   .maniypedi div h3 {
-    font-size: 20px;
+    font-size: 28px;
   }
   .maniypedi div p {
     width: 500px;
-    font-size: small;
   }
   .contacto div h3 {
-    font-size: 20px;
+    font-size: 28px;
   }
   .contacto div p {
     width: 500px;
-    font-size: small;
+    font-size: large;
   }
   .contacto .ubicacion {
     display: flex;
@@ -546,14 +565,9 @@ a {
     height: 420px;
     width: 190px;
   }
-  .articulos div {
-    margin-top: 10px;
-    margin-bottom: 50px;
-  }
-  .articulos div img {
+  .articulos img {
     width: 250px;
     height: 250px;
-    margin-bottom: 70px;
   }
   .articulos div h3 {
     font-size: 25px;
@@ -561,11 +575,22 @@ a {
   .articulos div p {
     width: 280px;
   }
-  .cosymasajes div p {
-    width: 340px;
+  .articulos2 img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 70px;
+  }
+  .articulos2 div h3 {
+    font-size: 25px;
+  }
+  .articulos2 div p {
+    width: 280px;
   }
   .maniypedi div p {
-    width: 340px;
+    width: 335px;
+  }
+  .contacto div h3 {
+    font-size: 25px;
   }
   .contacto div p {
     width: 340px;
@@ -579,10 +604,13 @@ a {
     margin-bottom: 0px;
   }
   .articulos div {
-    margin-bottom: 70px;
+    margin-bottom: 75px;
   }
-  .cosymasajes div p {
-    width: 295px;
+  .articulos2 img {
+    margin-bottom: 0px;
+  }
+  .articulos2 div {
+    margin-bottom: 75px;
   }
   .maniypedi div p {
     width: 295px;

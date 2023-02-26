@@ -39,12 +39,12 @@
         grid-template-rows: auto;
         grid-template-areas: "gri1" "gri2";
         justify-items: center;
+        img{
+            margin-bottom: 10px;
+            }
         div{
             margin-top: 10px;
-            margin-bottom: 50px;
-            img{
             margin-bottom: 70px;
-            }
             h3{
             font-size: 33px;
             }
@@ -54,19 +54,23 @@
         }
     }
     
-    .cosymasajes{
+    .articulos2{
         display: grid;
         grid-template-columns: 1;
         grid-template-rows: auto;
         grid-template-areas: "gri1" "gri2";
+        justify-items: center;
+        img{
+            margin-bottom: 10px;
+            }
         div{
+            margin-top: 10px;
+            margin-bottom: 70px;
             h3{
-            font-size: 30px;
-            margin-top: 0px;
+            font-size: 33px;
             }
             p{
-            width: $w-650;
-            font-size: $fontm;
+            font-size: $fontl;
             }
         }
     }
@@ -78,12 +82,12 @@
         grid-template-areas: "gri1" "gri2";
         div{
             h3{
-            font-size: 30px;
+            font-size: 33px;
             margin-top: 0px;
             }
             p{
             width: $w-650;
-            font-size: $fontm;
+            font-size: $fontl;
             }
         }
    }
@@ -98,13 +102,12 @@
             h3{
             margin-left: 0px;
             text-align: $centro;
-            font-size: 25px;
+            font-size: 33px;
             margin-top: 0px;
             padding-top: 10px;
             }
             p{
             width: $w-650;
-            font-size: $fontm;
             }
         }
     
@@ -134,11 +137,7 @@
 
     .articulos{
         div{
-            margin-top: 10px;
             margin-bottom: 50px;
-            img{
-            margin-bottom: 70px;
-            }
             h3{
             font-size: 28px;
             }
@@ -148,14 +147,15 @@
             }
         }
     }
-    .cosymasajes{
+    .articulos2{
         div{
+            margin-bottom: 50px;
             h3{
-            font-size: 20px;
+            font-size: 28px;
             }
             p{
             width: $w-500;
-            font-size: $fonts;
+            font-size: $fontl;
             }
         }
     }
@@ -163,11 +163,10 @@
     .maniypedi{
         div{
             h3{
-            font-size: 20px;
+            font-size: 28px;
             }
             p{
             width: $w-500;
-            font-size: $fonts;
             }
         }
     }
@@ -175,11 +174,11 @@
     .contacto{
         div{
             h3{
-            font-size: 20px;
+            font-size: 28px;
             }
             p{
             width: $w-500;
-            font-size: $fonts;
+            font-size: $fontl;
             }
         }
         .ubicacion{
@@ -220,14 +219,11 @@
     }
     
     .articulos{
+        img{
+        width: $wh-250;
+        height: $wh-250;
+        }
         div{
-            margin-top: 10px;
-            margin-bottom: 50px;
-            img{
-            width: $wh-250;
-            height: $wh-250;
-            margin-bottom: 70px;
-            }
             h3{
             font-size: 25px;
             }
@@ -237,23 +233,34 @@
         }
     }
 
-    .cosymasajes{
+    .articulos2{
+        img{
+            width: $wh-250;
+            height: $wh-250;
+            margin-bottom: 70px;
+        }
         div{
+            h3{
+            font-size: 25px;
+            }
             p{
-            width: 340px;
+            width: 280px;
             }
         }
     }
     .maniypedi{
         div{
             p{
-            width: 340px;
+            width: 335px;
             }
         }
     }
 
     .contacto{
         div{
+            h3{
+                font-size: 25px;
+                }
             p{
             width: 340px;
             }
@@ -273,16 +280,17 @@
             margin-bottom: 0px;
         }
         div{
-            margin-bottom: 70px;
+            margin-bottom: 75px;
         }
     }
 
-    .cosymasajes{
+    .articulos2{
+        img{
+            margin-bottom: 0px;
+        }
         div{
-            p{
-            width: 295px;
-            }
-        }   
+            margin-bottom: 75px;
+        }
     }
     .maniypedi{
         div{
