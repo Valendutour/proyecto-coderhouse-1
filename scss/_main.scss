@@ -105,7 +105,7 @@
         margin-bottom: 80px;
         width: $wh-300;
         height: $wh-300;
-        object-fit: fill;
+        object-fit: cover;
     }
     div{
         margin-top: 50px;
@@ -134,6 +134,7 @@
         margin-bottom: 80px;
         width: $wh-300;
         height: $wh-300;
+        object-fit: cover;
         }
     div{
         margin-top: 50px;
@@ -163,6 +164,7 @@
         margin-bottom: 80px;
         width: $wh-300;
         height: $wh-300;
+        object-fit: cover;
         }
         p{
         width:$w-650;
